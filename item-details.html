@@ -39,20 +39,28 @@
                 <p class="item-price">$50.20</p>
             </div>
             <div class="item-spec">
-                <select name="Size" id="size" class="items">
-                    <option value="XS">XS</option>
-                    <option value="S">S</option>
-                    <option value="M">M</option>
-                    <option value="L">L</option>
-                    <option value="XL">XL</option>
-                </select><br>
-                <select name="Quantity" id="quantity" class="items">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
+                <div class="dropdown-wrapper">
+                    <p class="pfix1">Size</p>
+                    <select name="Size" id="size" class="items">
+                        
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M" selected>M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                </div>
+                <div class="dropdown-wrapper">
+                    <p class="pfix2">Quantity</p>
+                    <select name="Quantity" id="quantity" class="items">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+
             </div>
             <div class="item-description-container">
                 <h2 class="item-description-head">Description</h2>
@@ -60,7 +68,7 @@
                     This technical shell features moisture-wicking fabric, added stretch and a hidden pocket for your
                     smartphone or media player.</p>
                 <div class="item-feature">
-                    <h3>Features</h3>
+                    <p>Features</p>
                     <ul class="feature">
                         <li class="feat">100% polyester</li>
                         <li class="feat">Smooth, technical front with textured mesh back.</li>
