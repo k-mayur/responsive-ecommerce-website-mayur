@@ -1,0 +1,10 @@
+/* Basic Reset */
+
+body,
+html {
+    margin: 0;
+    font-family: 'Roboto', 'Noto', sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.3em;
+    color: #202020;
+}
