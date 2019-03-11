@@ -127,6 +127,22 @@ img {
     grid-template-columns: 1fr 1fr;
 }
 
+/* item-details style */
+
+.layout-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.item-pic {
+    height: 80%;
+}
+
+.item-detail {
+    display: flex;
+    flex-direction: column;
+}
+
 /* footer style */
 
 .footer {
