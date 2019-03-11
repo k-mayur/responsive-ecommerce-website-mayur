@@ -173,6 +173,7 @@ img {
 
 .dropdown-wrapper {
     border-top: 1px solid gray;
+    position: relative;
 }
 
 .dropdown-wrapper > p {
@@ -182,10 +183,10 @@ img {
 }
 
 .pfix1 {
-    top: 52%
+    top: 15%;
 }
 .pfix2 {
-    top: 62.5%;
+    top: 13.5%;
 }
 
 
