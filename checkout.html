@@ -18,7 +18,7 @@
                 <h1><a href="index.html" class="home">shop</a></h1>
             </div>
             <div class="cart-icon">
-                <a href="checkout.html"><span class="fa fa-shopping-cart"></span></a> 
+                <a href="checkout.html"><span class="fa fa-shopping-cart"></span></a>
             </div>
         </div>
         <div class="navigation">
@@ -29,8 +29,91 @@
         </div>
     </header>
 
-    <section class="layout">
-        checkout
+    <section class="layout-checkout">
+        <h2 class="checkout-head">Checkout</h2>
+        <p class="checkout-para">Shop is a demo app - form data will not be sent</p>
+        <div class="forms-wrapper">
+            <div class="form-left">
+                <form class="account-info">
+                    <h3>Account Information</h3><br>
+                    <input type="email" name="email" placeholder="Email"><br>
+                    <input type="text" name="phone" placeholder="Phone Number">
+                </form>
+                <form class="ship-address">
+                    <h3>Shipping Address</h3><br>
+                    <input type="text" name="address" placeholder="Address"><br>
+                    <input type="text" name="city" placeholder="City"><br>
+                    <input type="text" name="state" placeholder="State/Province">
+                    <input type="text" name="zip" placeholder="Zip/Postal Code">
+                    <select name="Country" id="country">
+                        <option value="US">United States</option>
+                        <option value="Canada">Canada</option>
+                    </select>
+                </form>
+                <form class="bill-address">
+                    <h3>Billing Address</h3><br>
+                    <input type="radio" name="add-toggle" value="billing address">Use different billing address<br>
+                    <input type="text" name="address" placeholder="Address"><br>
+                    <input type="text" name="city" placeholder="City"><br>
+                    <input type="text" name="state" placeholder="State/Province">
+                    <input type="text" name="zip" placeholder="Zip/Postal Code">
+                    <select name="Country" id="country">
+                        <option value="US">United States</option>
+                        <option value="Canada">Canada</option>
+                    </select>
+                </form>
+            </div>
+            <div class="form-right">
+                <h3>Payment Method</h3><br>
+                <form class="payment">
+                    <input type="text" name="card-name" placeholder="Cardholder Name"><br>
+                    <input type="text" name="card-no" placeholder="Card Number"><br>
+                    <h4>Expiry</h4><br>
+                    <select name="month" id="month">
+                        <option value="jan">Jan</option>
+                        <option value="feb">Feb</option>
+                        <option value="mar">Mar</option>
+                        <option value="apr">Apr</option>
+                        <option value="may">May</option>
+                        <option value="jun">Jun</option>
+                        <option value="jul">Jul</option>
+                        <option value="aug">Aug</option>
+                        <option value="sep">Sep</option>
+                        <option value="oct">Oct</option>
+                        <option value="nov">Nov</option>
+                        <option value="dec">Dec</option>
+                    </select>
+                    <select name="year" id="year">
+                        <option value="16">2016</option>
+                        <option value="17">2017</option>
+                        <option value="18">2018</option>
+                        <option value="19">2019</option>
+                        <option value="20">2020</option>
+                        <option value="21">2021</option>
+                        <option value="22">2022</option>
+                        <option value="23">2023</option>
+                        <option value="24">2024</option>
+                        <option value="25">2025</option>
+                        <option value="26">2026</option>
+                    </select>
+                    <input type="text" placeholder="CVV">
+                </form><br>
+                <h3>Order Summary</h3><br>
+                <table class="order">
+                    <tr>
+                        <td>Men's Tech Shell Full-Zip</td>
+                        <td>$150.60</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>$150.60</td>
+                    </tr>
+                </table>
+                <div class="order-button">
+                    <a href="item-details.html">place order</a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer class="footer">

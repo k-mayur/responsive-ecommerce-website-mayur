@@ -132,6 +132,7 @@ img {
 .layout-item {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 2rem auto;
 }
 
 .item-pic {
@@ -141,6 +142,27 @@ img {
 .item-detail {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* checkout style */
+
+.layout-checkout {
+    display: flex;
+    flex-direction: column;
+}
+
+.forms-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form-left {
+
+}
+
+.form-right {
+
 }
 
 /* footer style */
