@@ -8,3 +8,25 @@ html {
     letter-spacing: 0.3em;
     color: #202020;
 }
+
+
+/* Header style */
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    text-align: center;
+    padding: 0 0.5em;
+}
+
+.header-text {
+    grid-column-start: 1;
+    text-transform: uppercase;
+
+}
+
+.cart-icon {
+    grid-column-start: 2;
+    font-size: 30px;
+    padding: 0.5em 0;
+}
