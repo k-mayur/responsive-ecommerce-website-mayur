@@ -6,6 +6,10 @@ html {
     font-family: 'Roboto', 'Noto', sans-serif;
     font-size: 13px;
     letter-spacing: 0.3em;
+}
+
+a {
+    text-decoration: none;
     color: #202020;
 }
 
@@ -13,6 +17,12 @@ html {
 /* Header style */
 
 .header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header-heading {
+    grid-row-start: 1;
     display: grid;
     grid-template-columns: 1fr 50px;
     text-align: center;
@@ -29,4 +39,22 @@ html {
     grid-column-start: 2;
     font-size: 30px;
     padding: 0.5em 0;
+}
+
+.navigation {
+    grid-row-start: 2;
+    display: flex;
+    justify-content: space-around;
+    margin: auto 10%;
+}
+
+.nav-items {
+    text-align: center;
+    font-size: 1.3em;
+    letter-spacing: 0.1em;
+}
+
+
+a:visited {
+    background-color: red;
 }
