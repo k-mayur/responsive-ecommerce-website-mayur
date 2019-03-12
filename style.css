@@ -242,9 +242,14 @@ img {
 }
 
 .forms-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 2em auto;
+    display: flex;
+    flex-direction: row;
+    margin: 2em 3em;
+}
+
+.forms-wrapper h3,
+h4 {
+    margin-bottom: 4em;
 }
 
 .forms-wrapper input,
@@ -257,12 +262,66 @@ select {
     width: 100%;
 }
 
+
+input:focus-within::-webkit-input-placeholder {
+    color: transparent;
+}
+
+
+.input-wrap {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 1em;
+}
+.show-text {
+    position: absolute;
+    font-size: 1.5em;
+    color: transparent;
+    top: 0;
+}
+
+.input-wrap input:focus~.show-text {
+    color: #202020;
+    font-size: 1em;
+    position: absolute;
+    top: -2em;
+    transition: all .3s ease-out;
+}
+
+.input-border {
+    position: absolute;
+    bottom: 0;
+    align-self: center;
+    background-color: transparent;
+    height: 3px;
+    width: 3px;
+}
+
+.input-wrap:focus-within .input-border {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #202020;
+    transition: all .3s ease-out;
+}
+
+
+
+
 .form-left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     margin: 0 1.5em;
     padding: 1em 3em;
 }
 
 .form-right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     margin: 0 1.5em;
     padding: 1em 3em;
 }
@@ -421,7 +480,6 @@ select {
     .forms-wrapper h3,
     h4 {
         font-size: 1em;
-        margin-bottom: 2em;
     }
 
     .forms-wrapper input,
@@ -439,6 +497,14 @@ select {
 
     .wrapper {
         margin-bottom: 2em;
+    }
+
+    .input-border {
+        bottom: 1em;
+    }
+
+    .input-wrap:focus-within .input-border {
+        bottom: 1em;
     }
 
     .wrapper input {
@@ -505,5 +571,5 @@ select {
     .item-pic img {
         zoom: 1.5;
     }
-    
+
 }
