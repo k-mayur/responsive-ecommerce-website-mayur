@@ -176,7 +176,7 @@ img {
     position: relative;
 }
 
-.dropdown-wrapper > p {
+.dropdown-wrapper>p {
     color: gray;
     position: absolute;
     font-size: 1.2em;
@@ -185,6 +185,7 @@ img {
 .pfix1 {
     top: 15%;
 }
+
 .pfix2 {
     top: 13.5%;
 }
@@ -201,7 +202,7 @@ img {
 }
 
 .item-description-container {
-    padding:3em 0;
+    padding: 3em 0;
     color: gray;
     line-height: 1.7;
 }
@@ -233,6 +234,7 @@ img {
     text-align: center;
     font-weight: 300;
 }
+
 .checkout-para {
     color: gray;
     font-size: 1em;
@@ -245,7 +247,8 @@ img {
     margin: 2em auto;
 }
 
-.forms-wrapper input, select {
+.forms-wrapper input,
+select {
     border: none;
     box-shadow: 0 1px gray;
     background: none;
@@ -269,11 +272,15 @@ img {
     line-height: 2;
 }
 
-#month, #year, #cvv {
+#month,
+#year,
+#cvv {
     width: 30%;
     margin: 0.5em 0.2em;
 }
-#state, #zip {
+
+#state,
+#zip {
     width: 45%;
     margin: 0.5em 0.2em;
 }
@@ -306,4 +313,48 @@ img {
     background-color: #202020;
     color: white;
     text-transform: uppercase;
+}
+
+/* make responsive break point 800px */
+
+@media only screen and (max-width: 800px) {
+
+    /* homepage style break */
+
+    .header {
+        height: 5em;
+    }    
+
+    .navigation {
+        display: none;
+    }
+
+    .nav-bar {
+        background-image: url(images/nav.svg);
+        position: absolute;
+        top: 1.5em;
+        left: 1em;
+        background-size: cover;
+        height: 40px;
+        width: 40px;
+    }
+    
+
+    /* layout style homepage */   
+
+    .cover {
+        min-height: 20rem;
+    }
+
+    .cover-content {
+        width: 20rem;
+        font-size: 1em;
+        line-height: 1.5;
+    }
+
+    /* item-details page responsive */
+
+    
+
+    
 }
