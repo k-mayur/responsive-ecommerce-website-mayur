@@ -315,6 +315,10 @@ select {
     text-transform: uppercase;
 }
 
+.fixed-bottom {
+    display: none;
+}
+
 /* make responsive break point 800px */
 
 @media only screen and (max-width: 800px) {
@@ -323,7 +327,7 @@ select {
 
     .header {
         height: 5em;
-    }    
+    }
 
     .navigation {
         display: none;
@@ -338,9 +342,9 @@ select {
         height: 40px;
         width: 40px;
     }
-    
 
-    /* layout style homepage */   
+
+    /* layout style homepage */
 
     .cover {
         min-height: 20rem;
@@ -354,7 +358,48 @@ select {
 
     /* item-details page responsive */
 
-    
+    .layout-item {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem auto 6rem;
+    }
 
-    
+    .item-pic {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .item-pic img {
+        zoom: 2;
+        width: 100%;
+        float: none;
+    }
+
+    .item-detail {
+        margin: 0 auto;
+        max-width: 70%;
+    }
+
+    .item-cart {
+        display: none;
+    }
+
+    .fixed-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2em;
+        letter-spacing: 0.1em;
+        background-color: #202020;
+        width: 100%;
+        text-transform: uppercase;
+        height: 70px;
+        position: fixed;
+        bottom: 0;
+    }
+    .fixed-bottom a {
+        color: white;
+    }
+
+
 }
