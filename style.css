@@ -225,19 +225,62 @@ img {
 .layout-checkout {
     display: flex;
     flex-direction: column;
+    letter-spacing: 0.05em;
+}
+
+.checkout-head {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 300;
+}
+.checkout-para {
+    color: gray;
+    font-size: 1em;
+    text-align: center;
 }
 
 .forms-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 2em auto;
+}
+
+.forms-wrapper input, select {
+    border: none;
+    box-shadow: 0 1px gray;
+    background: none;
+    font-size: 1.5em;
+    height: 3.5em;
+    width: 100%;
 }
 
 .form-left {
-
+    margin: 0 1.5em;
+    padding: 1em 3em;
 }
 
 .form-right {
+    margin: 0 1.5em;
+    padding: 1em 3em;
+}
 
+.wrapper {
+    margin-right: 1em;
+    line-height: 2;
+}
+
+#month, #year, #cvv {
+    width: 30%;
+    margin: 0.5em 0.2em;
+}
+#state, #zip {
+    width: 45%;
+    margin: 0.5em 0.2em;
+}
+
+.order {
+    line-height: 3;
+    width: 100%;
 }
 
 /* footer style */
