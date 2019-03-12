@@ -418,7 +418,8 @@ select {
         margin: 2em 0.2em;
     }
 
-    .forms-wrapper h3, h4 {
+    .forms-wrapper h3,
+    h4 {
         font-size: 1em;
         margin-bottom: 2em;
     }
@@ -466,4 +467,43 @@ select {
         padding-left: 1em;
     }
 
+}
+
+@media only screen and (max-width: 549px) {
+
+    .layout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .outerwear {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cover {
+        min-height: 10rem;
+    }
+
+    .cover-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 20rem;
+        margin: 0.5rem auto;
+        font-size: 1em;
+        line-height: 1.5;
+    }
+
+    .tshirts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* item-details style */
+
+    .item-pic img {
+        zoom: 1.5;
+    }
+    
 }
