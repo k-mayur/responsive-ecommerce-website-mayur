@@ -279,6 +279,7 @@ input:focus-within::placeholder {
     position: relative;
     margin-bottom: 1em;
 }
+
 .show-text {
     position: absolute;
     font-size: 1.5em;
@@ -310,6 +311,91 @@ input:focus-within::placeholder {
     background-color: #202020;
 }
 
+.input-wrapper {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.col-1,
+.col-2,
+.col-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.show-text-a {
+    align-self: flex-start;
+    position: absolute;
+    font-size: 1.5em;
+    color: transparent;
+    top: 0;
+    transition: all .3s ease-out;
+}
+
+.col-1 input:focus~.show-text-a {
+    align-self: flex-start;
+    left: 0.5em;
+    color: #202020;
+    font-size: 1em;
+    position: absolute;
+    top: -2em;
+}
+
+.input-border-a {
+    position: relative;
+    bottom: 0.7em;
+    background-color: transparent;
+    height: 3px;
+    width: 3px;
+    transition: all .3s ease-out;
+}
+
+.col-1:focus-within .input-border-a {
+    bottom: 0.7em;
+    width: 96%;
+    height: 3px;
+    background-color: #202020;
+}
+
+.show-text-b {
+    align-self: flex-start;
+    position: absolute;
+    font-size: 1.5em;
+    color: transparent;
+    top: 0;
+    transition: all .3s ease-out;
+}
+
+.col-2 input:focus~.show-text-b {
+    left: 53%;
+    color: #202020;
+    font-size: 1em;
+    position: absolute;
+    top: -2em;
+}
+
+.input-border-b {
+    position: relative;
+    bottom: 0.7em;
+    background-color: transparent;
+    height: 3px;
+    width: 3px;
+    transition: all .3s ease-out;
+}
+
+.col-2:focus-within .input-border-b {
+    bottom: 0.7em;
+    width: 96%;
+    height: 3px;
+    background-color: #202020;
+}
+
+
 .form-left {
     display: flex;
     flex-direction: column;
@@ -326,6 +412,48 @@ input:focus-within::placeholder {
     padding: 1em 3em;
 }
 
+
+.zip-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.show-text-c {
+    align-self: flex-start;
+    position: relative;
+    font-size: 1em;
+    color: transparent;
+    bottom: 3em;
+    left: 0.2em;
+    transition: all .3s ease-out;
+}
+
+.col-3 input:focus~.show-text-c {
+    
+    color: #202020;
+    font-size: 1em;
+    position: relative;
+    bottom: 8em;
+}
+
+.input-border-c {
+    position: relative;
+    bottom: 2em;
+    background-color: transparent;
+    height: 3px;
+    width: 3px;
+    transition: all .3s ease-out;
+}
+
+.col-3:focus-within .input-border-c {
+    bottom: 2em;
+    width: 96%;
+    height: 3px;
+    background-color: #202020;
+}
+
 .wrapper {
     margin-right: 1em;
     line-height: 2;
@@ -334,13 +462,13 @@ input:focus-within::placeholder {
 #month,
 #year,
 #cvv {
-    width: 30%;
+    width: 95%;
     margin: 0.5em 0.2em;
 }
 
 #state,
 #zip {
-    width: 45%;
+    width: 95%;
     margin: 0.5em 0.2em;
 }
 
@@ -511,21 +639,64 @@ input:focus-within::placeholder {
         margin-bottom: 0;
     }
 
+    .show-text-a {
+        font-size: 1em;
+    }
+    
+    .col-1 input:focus~.show-text-a {
+        font-size: 1em;
+    }
+    
+    .input-border-a {
+        bottom: 2.5em;
+    }
+    
+    .col-1:focus-within .input-border-a {
+        bottom: 2.5em;
+    }
+
+    .show-text-b {
+        font-size: 1em;
+    }
+    
+    .col-2 input:focus~.show-text-b {
+        font-size: 1em;
+    }
+    
+    .input-border-b {
+        bottom: 2.5em;
+    }
+    
+    .col-2:focus-within .input-border-b {
+        bottom: 2.5em;
+    }
+
+    .show-text-c {
+        bottom: 5em;
+        left: 0.4em;
+    }
+        
+    .input-border-c {
+        bottom: 3.5em;
+    }
+    
+    .col-3:focus-within .input-border-c {
+        bottom: 3.5em;
+    }
+
+
     #month,
     #year,
     #cvv {
-        width: 31%;
         margin: 0.5em 0.2em 2em;
     }
 
     #country {
-        width: 98%;
         margin-bottom: 2em;
     }
 
     #state,
     #zip {
-        width: 48%;
         margin: -0.5em 0.2em 2em;
     }
 

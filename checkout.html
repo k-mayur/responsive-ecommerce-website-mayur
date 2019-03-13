@@ -71,11 +71,18 @@
                         </div>
                         <br>
                     </div>
-                    <div class="zip-wrapper">
-                        <input type="text" name="state" id="state" placeholder="State/Province">
-                        <label for="state" class="show-text">State/Province</label>
-                        <input type="text" name="zip" id="zip" placeholder="Zip/Postal Code">
-                        <label for="zip" class="show-text">Zip/Postal Code</label>
+                    <div class="input-wrapper">
+                        <div class="col-1">
+                            <input type="text" name="state" id="state" placeholder="State/Province">
+                            <label for="state" class="show-text-a">State/Province</label>
+                            <div class="input-border-a" id="state-b"></div>
+                        </div>
+                        <div class="col-2">
+                            <input type="text" name="zip" id="zip" placeholder="Zip/Postal Code">
+                            <label for="zip" class="show-text-b">Zip/Postal Code</label>
+                            <div class="input-border-b" id="zip-b"></div>
+                        </div>
+
                     </div>
                     <select name="Country" id="country">
                         <option value="US">United States</option>
@@ -119,35 +126,44 @@
                     </div>
                     <h4>Expiry</h4>
                     <div class="zip-wrapper">
-                        <select name="month" id="month">
-                            <option value="jan">Jan</option>
-                            <option value="feb">Feb</option>
-                            <option value="mar">Mar</option>
-                            <option value="apr">Apr</option>
-                            <option value="may">May</option>
-                            <option value="jun">Jun</option>
-                            <option value="jul">Jul</option>
-                            <option value="aug">Aug</option>
-                            <option value="sep">Sep</option>
-                            <option value="oct">Oct</option>
-                            <option value="nov">Nov</option>
-                            <option value="dec">Dec</option>
-                        </select>
-                        <select name="year" id="year">
-                            <option value="16">2016</option>
-                            <option value="17">2017</option>
-                            <option value="18">2018</option>
-                            <option value="19">2019</option>
-                            <option value="20">2020</option>
-                            <option value="21">2021</option>
-                            <option value="22">2022</option>
-                            <option value="23">2023</option>
-                            <option value="24">2024</option>
-                            <option value="25">2025</option>
-                            <option value="26">2026</option>
-                        </select>
-                        <input type="text" id="cvv" placeholder="CVV">
-                        <label for="cvv" class="show-text">CVV</label>
+                        <div>
+                            <select name="month" id="month">
+                                <option value="jan">Jan</option>
+                                <option value="feb">Feb</option>
+                                <option value="mar">Mar</option>
+                                <option value="apr">Apr</option>
+                                <option value="may">May</option>
+                                <option value="jun">Jun</option>
+                                <option value="jul">Jul</option>
+                                <option value="aug">Aug</option>
+                                <option value="sep">Sep</option>
+                                <option value="oct">Oct</option>
+                                <option value="nov">Nov</option>
+                                <option value="dec">Dec</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select name="year" id="year">
+                                <option value="16">2016</option>
+                                <option value="17">2017</option>
+                                <option value="18">2018</option>
+                                <option value="19">2019</option>
+                                <option value="20">2020</option>
+                                <option value="21">2021</option>
+                                <option value="22">2022</option>
+                                <option value="23">2023</option>
+                                <option value="24">2024</option>
+                                <option value="25">2025</option>
+                                <option value="26">2026</option>
+                            </select>
+                        </div>
+                        <div class="col-3">
+                            <input type="text" id="cvv" placeholder="CVV">
+                            <label for="cvv" class="show-text-c">CVV</label>
+                            <div class="input-border-c"></div>
+                        </div>
+
+
                     </div>
                 </form>
                 <h3>Order Summary</h3>
@@ -180,6 +196,3 @@
 </body>
 
 </html>
-
-
-
