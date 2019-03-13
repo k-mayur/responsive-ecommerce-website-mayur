@@ -226,6 +226,8 @@ img {
 .layout-checkout {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     letter-spacing: 0.05em;
 }
 
@@ -263,7 +265,7 @@ select {
 }
 
 
-input:focus-within::-webkit-input-placeholder {
+input:focus-within::placeholder {
     color: transparent;
 }
 
@@ -495,21 +497,21 @@ input:focus-within::-webkit-input-placeholder {
     }
 
     .input-border {
-        bottom: 1em;
+        bottom: 2em;
     }
 
     .input-wrap:focus-within .input-border {
-        bottom: 1em;
+        bottom: 2em;
     }
 
     .wrapper input {
-        margin-bottom: 1em;
+        margin-bottom: 0;
     }
 
     #month,
     #year,
     #cvv {
-        width: 31.5%;
+        width: 31%;
         margin: 0.5em 0.2em 2em;
     }
 
